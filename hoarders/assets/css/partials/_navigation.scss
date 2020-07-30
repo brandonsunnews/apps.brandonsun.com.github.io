@@ -1,0 +1,77 @@
+/*----------------------------------
+NAVIGATION
+----------------------------------*/
+
+nav {
+    position: fixed;
+    top: 0;
+    z-index: 100;
+    width: 100%;
+    height: 72.5px;
+    border-bottom: 1px solid $greyLighter;
+    background: #fff;
+}
+
+// Progress bar
+.nav__progress {
+    position: relative;
+    top: -6px;
+    z-index: 90;
+    width: 100%;
+    height: 19px;
+    background-color: $greyDarker;
+    color: $yellow;
+}
+
+.nav__progress::-webkit-progress-bar {
+    background-color: $greyDarker;
+    color: $yellow;
+}
+
+.nav__progress::-webkit-progress-value {
+    background-color: $yellow;
+    color: $yellow;
+}
+
+.nav__progress::-moz-progress-bar {
+    position: relative;
+    left: -2px;
+    height: 19px;
+    background-color: $yellow;
+    color: $yellow;
+}
+
+// Branding
+.nav__container { margin: 0; }
+
+.nav__logo {
+    position: relative;
+    top: -6px;
+    margin: 14px;
+    width: 105px;
+    height: 25px;
+    cursor: pointer;
+
+    &:visited {
+    	outline: 0;
+    }
+}
+
+// Social media icons
+.nav__social {
+    position: relative;
+    top: -48px;
+    float: right;
+    padding-right: 15px;
+}
+
+.nav__icon {
+    padding: 8px;
+    border-bottom: none;
+    color: $greyDarkest;
+    cursor: pointer;
+
+    &:hover {
+    	outline: none;
+    }
+}

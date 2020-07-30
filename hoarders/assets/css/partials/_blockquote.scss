@@ -1,0 +1,141 @@
+/*----------------------------------
+BLOCKQUOTE
+----------------------------------*/
+
+blockquote {
+	clear: both;
+	margin: 0 auto;
+	width: 100%;
+	font-weight: 300;
+	font-size: 25px;
+	font-family: "Lato", sans-serif;
+}
+
+// Simple
+.blockquote--simple {
+	margin-top: 40px;
+	margin-bottom: 40px;
+	border-top: 10px solid $black;
+	border-bottom: 1px solid $black;
+}
+
+.blockquote__text--simple {
+	margin-bottom: 0;
+	font-size: 25px;
+	font-family: "Lato", sans-serif;
+	line-height: 1.25;
+}
+
+.blockquote__icons {
+	display: block;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	text-align: right;
+
+	p {
+		position: relative;
+		top: -3px;
+		display: inline;
+		font-weight: 700;
+		font-size: 16px;
+		font-family: "Lato", sans-serif;
+	}
+}
+
+.blockquote__icon--simple {
+	padding-left: 10px;
+	cursor: pointer;
+
+	&:hover,
+	&:active,
+	&:visited {
+		color: $yellow;
+	}
+}
+
+// Explainer
+.blockquote--explainer {
+	margin: 0 auto;
+	margin-top: 25px;
+	margin-bottom: 25px;
+	width: 100%;
+	// border-top: 1px solid $grey;
+	// border-bottom: 1px solid $grey;
+}
+
+.blockquote__container {
+	position: relative;
+	top: 35px;
+	text-align: center;
+}
+
+.blockquote__icon--explainer {
+	width: 55px;
+	height: 55px;
+	border-radius: 50%;
+	background: $yellow;
+	fill: $black;
+}
+
+.blockquote__info {
+	float: right;
+	margin-top: 30px;
+	margin-bottom: 30px;
+	width: 84%;
+}
+
+.blockquote__title--explainer {
+	padding-bottom: 5px;
+	text-transform: uppercase;
+	font-weight: 900;
+}
+
+.blockquote__title--explainer,
+.blockquote__text--explainer {
+	margin: 0;
+	font-size: 14px;
+	line-height: 1.5;
+}
+
+.blockquote__more {
+	margin-bottom: 4px;
+	margin-left: 4px;
+	border-bottom: 2px solid $yellow;
+	font-weight: 700;
+	cursor: pointer;
+}
+
+.blockquote--extra {
+	clear: both;
+	font-size: 16px;
+	font-family: "Georgia",serif;
+	line-height: 1.5;
+	background: #f7f7f7;
+	padding: 25px;
+	border-radius: 3px;
+}
+
+.blockquote__criteria {
+	display: inline-block;
+	margin: 5px;
+	padding: 0;
+	width: 100%;
+	vertical-align: top;
+	font-weight: 700;
+	font-size: 14px;
+	font-family: "Lato", sans-serif;
+
+	li {
+		margin: 0;
+		padding: 20px;
+		color: #fff;
+		list-style-type: none;
+	}
+}
+
+.reason-one   { background: darken($greyLighter, 15%); }
+.reason-two   { background: darken($greyLighter, 30%); }
+.reason-three { background: darken($greyLighter, 45%); }
+.reason-four  { background: darken($greyLighter, 60%); }
+.reason-five  { background: darken($greyLighter, 75%); }
+.reason-six   { background: darken($greyLighter, 90%); }

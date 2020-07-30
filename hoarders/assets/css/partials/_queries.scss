@@ -1,0 +1,127 @@
+/*----------------------------------
+MEDIA QUERIES
+----------------------------------*/
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 1200px) {
+	.header__container p { width: 95%; }
+	.blockquote__info { width: 80%; }
+}
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 1024px) {
+	h1 {
+		padding-bottom: 25px;
+		font-size: 10rem;
+		line-height: 80px;
+	}
+
+	.header__container { height: 165px; }
+	.header__container p { width: 80%; }
+}
+
+/* Custom media query */
+@media (max-width: 925px) {
+	.blockquote__info { width: 76%; }
+}
+
+/* Custom media query */
+@media (max-width: 842px) {
+	.header__container p { width: 100%; }
+}
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 768px) {
+	h1 {
+		padding-bottom: 25px;
+		font-size: 8rem;
+		line-height: 80px;
+	}
+
+	.header__container p {
+		margin: 0 auto;
+		padding-top: 8px;
+		width: 80%;
+	}
+
+	.header__third {
+		display: block;
+		width: 100%;
+		height: 140px;
+		border-right: none;
+		border-bottom: 1px solid $greyLighter;
+	}
+
+	.header--none {
+		padding-top: 10px;
+		border-bottom: none;
+	}
+
+	.advertising__image { width: 85%; }
+	article { width: 65%; }
+	.blockquote--simple { width: 100%; }
+	.blockquote__info { width: 82%; }
+	.header__container { height: 415px; }
+	.header__details { width: 80%; }
+}
+
+
+/* Custom media query */
+@media (max-width: 600px) {
+	.blockquote__info { width: 80%; }
+}
+
+/* Custom media query */
+@media (max-width: 550px) {
+	.blockquote__info { width: 76%; }
+	footer { height: 200px; }
+	.footer__credits { width: 90%; }
+}
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 480px) {
+	h1 {
+		padding-bottom: 25px;
+		font-size: 6rem;
+		line-height: 60px;
+	}
+
+	.header__tease {
+		margin: 0 auto;
+		padding-bottom: 10px;
+		width: 70%;
+	}
+
+	article { width: 86%; }
+	blockquote { width: 80%; }
+	.blockquote__info { width: 78%; }
+	footer { height: 230px; }
+	.footer__credits p { line-height: 22px; }
+	.header__container { height: 430px; }
+	.timeline__image { width: 100%; }
+}
+
+/* Custom media query */
+@media (max-width: 430px) {
+
+	.footer__help { height: 65px; }
+	.footer__help p { width: 88%; }
+}
+
+/* Custom media query */
+@media (max-width: 400px) {
+	.blockquote__info { width: 75%; }
+}
+
+/* Custom media query */
+@media (max-width: 350px) {
+	.blockquote__info { width: 72%; }
+	.header__small { font-size: 2.9rem; }
+}
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 320px) {
+	.advertising__image { width: 92%; }
+	.footer__credits { width: 95%; }
+	.header--none { border-bottom: none; }
+}
