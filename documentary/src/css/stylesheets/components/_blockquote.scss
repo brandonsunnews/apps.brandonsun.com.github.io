@@ -1,0 +1,191 @@
+/*----------------------------------
+BLOCKQUOTE
+----------------------------------*/
+
+blockquote {
+  margin: 0;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  padding-top: 10px;
+  padding-bottom: 20px;
+  border-top: 10px solid black;
+  border-bottom: 1px solid black;
+  text-align: left;
+
+  .quote,
+  .quote__text {
+    text-transform: uppercase;
+    font-weight: $font-bold;
+    font-size: 3rem;
+    font-family: $font-accent; // Causing issues?
+    line-height: $sm-line-height;
+    color: $color-black;
+  }
+
+  .quote__name {
+    margin: 0;
+    text-align: bottom;
+    text-transform: uppercase;
+    font-weight: $font-bold;
+    font-size: $font-size-xs;
+    font-family: $font-sans;
+    color: $color-black;
+  }
+
+  .quote__title {
+    margin: 0;
+    padding: 0;
+    font-weight: $font-normal;
+    font-size: $font-size-base;
+    font-size: $font-size-xs;
+    font-family: $font-sans;
+    color: $color-black;
+  }
+
+  .quote__icon {
+    position: relative;
+    top: -48px;
+    right: -2px;
+    display: inline-block;
+    float: right;
+    width: 40px;
+    height: 40px;
+  }
+}
+
+.link--twitter {
+  display: block;
+  height: 40px;
+  width: 40px;
+}
+
+.quote--inner {
+  width: 50%;
+}
+
+.blockquote--small {
+  font-weight: $font-bold;
+  font-size: $font-size-sm;
+}
+
+.blockquote--inline {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  border-top: 1px solid $color-black;
+  border-bottom: 1px solid $color-black;
+  font-weight: $font-bold;
+  font-size: $font-size-xl;
+}
+
+/* Inline block quotes with text that wraps around and also features the ability to play audio and share quote over Twitter */
+
+.person {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  display: none;
+  float: right;
+}
+
+.quote__name,
+.quote__title {
+  display: block;
+}
+
+.title--les { width: 68%; }
+
+
+.tooltip-toggle {
+  position: relative;
+  cursor: pointer;
+
+  //Tooltip text container - above element
+  //You can adjust the position to make the container appear below or beside the element
+  &::before {
+    position: absolute;
+    top: -55px; //This places the container above the element that needs a tooltip
+    left: -50px; //This centers the container above the element
+    padding: 1rem;
+    width: 95px;
+    border-radius: 5px;
+    background-color: $color-twitter;
+    color: $color-white;
+    content: attr(data-tooltip); //This pulls in the text from the element with the tooltip
+    text-transform: none;
+    transition: all 0.5s ease;
+  }
+
+  // //Tooltip arrow
+  // //You can adjust the position of this to align nicely with the element that
+  // //needs a tooltip. You can also use `transform` to rotate it to make the
+  // //tooltip work below or next to the element.
+  &::after {
+    position: absolute;
+    top: -20px; //This positions the arrow at the bottom of the container
+    left: 22px; //This centers the arrow above the element with the tooltip
+    margin-left: -5px;
+    width: 0;
+    border-top: 7px solid $color-twitter;
+    border-right: 7px solid transparent;
+    border-left: 7px solid transparent;
+    content: " ";
+    font-size: 0;
+    line-height: 0;
+  }
+
+  // Setting up the transition
+  &::before,
+  &::after {
+    opacity: 0;
+    transition: all 0.25s ease-in;
+    pointer-events: none;
+  }
+
+  // Triggering the transition
+  &:hover::before,
+  &:hover::after {
+    opacity: 1;
+    transition: all 0.25s ease-in;
+  }
+}
+
+/* Large devices */
+@media (max-width: 1200px) {
+}
+
+/* Large devices */
+@media (max-width: 1024px) {
+}
+
+/* Medium devices */
+@media (max-width: 768px) {
+}
+
+/* Small devices */
+@media (max-width: 480px) {
+  .tooltip-toggle {
+
+    &::before,
+    &::after {
+      display: none;
+
+      &:hover::before,
+      &:hover::after {
+        display: none;
+      }
+    }
+  }
+
+  .title--casson { width: 50%; }
+}
+
+/* Small devices */
+@media (max-width: 320px) {
+  .quote__title {
+    width: 70%;
+  }
+
+  .title--casson { width: 45%; }
+}

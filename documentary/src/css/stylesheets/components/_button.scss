@@ -1,0 +1,223 @@
+/*----------------------------------
+BOOKMARK
+----------------------------------*/
+
+.btn {
+  outline-color: $color-primary;
+  border: none;
+  background: transparent;
+}
+
+.btn__wrapper {
+  position: absolute;
+  bottom: 30px;
+  margin: 0 auto;
+  width: 100%;
+  text-align: center;
+}
+
+.btn__wrapper--circle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  text-align: center;
+  -webkit-transform: translate(-50%, -50%);
+     -moz-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  outline: 0;
+}
+
+.btn-circle {
+  width: 65px;
+  height: 65px;
+  border: 3px solid $color-white;
+  border-radius: $border-circle;
+  background: transparent;
+  outline: 0;
+
+  &:hover {
+    transition: 0.25s ease-in;
+    background-color: rgba(0,0,0,0.4);
+  }
+}
+
+.btn--skip,
+.btn-credits,
+.btn-share {
+  position: relative;
+  z-index: 25;
+  display: inline;
+  margin-top: 30px;
+  padding: 10px;
+  outline-color: $color-primary;
+  color: $color-white;
+  text-transform: uppercase;
+  font-weight: $font-bold;
+  font-size: $font-size-sm;
+
+  &:hover {
+    outline-color: $color-primary;
+    color: $color-primary;
+    transition: 0.25s;
+  }
+}
+
+.btn-credits,
+.btn-share {
+  position: relative;
+  top: 2px;
+  display: block;
+  margin-top: 0;
+  padding-right: 15px;
+  padding-left: 15px;
+  width: 88px;
+  border: 1px solid $color-white;
+  color: $color-white;
+  font-size: $font-size-xs; // Override
+
+  &:hover {
+    border: 1px solid $color-primary;
+  }
+}
+
+.btn-share {
+  border-top-left-radius: $border-radius;
+  border-top-right-radius: $border-radius;
+  border-bottom-right-radius: none;
+  border-bottom-left-radius: none;
+}
+
+.btn-credits {
+  border-top-left-radius: none;
+  border-bottom-right-radius: $border-radius;
+  border-bottom-left-radius: $border-radius;
+  border-right-right-radius: none;
+}
+
+// Big button
+.btn-top {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  display: none;
+  padding-right: 30px;
+  padding-left: 30px;
+  height: 108px;
+  background: transparent;
+  color: $color-white;
+  font-size: $font-size-sm;
+  cursor: pointer;
+
+  span {
+    font-size: $font-size-sm;
+  }
+
+  &:hover {
+    outline-color: $color-primary;
+    background: $color-primary;
+    color: $color-black;
+    transition: 0.25s;
+  }
+}
+
+.btn-grid,
+.btn-details {
+  border: none;
+}
+
+.btn-grid,
+.btn-details,
+.btn-twitter-white,
+.btn-facebook-white,
+.btn-email-white {
+  margin-right: 10px;
+  width: 34px;
+  height: 34px;
+  outline-color: $color-primary;
+  background: transparent;
+  color: $color-white;
+  font-size: $font-size-lg;
+  cursor: pointer;
+
+  &:hover,
+  &:active,
+  &:visited,
+  &:focus {
+    background: transparent;
+    color: $color-primary;
+    transition: 0.25s; // Needs vendor prefixes
+  }
+}
+
+.btn-details {
+  margin-right: 15px;
+}
+
+.btn-twitter-white,
+.btn-facebook-white,
+.btn-email-white {
+  margin-top: 30px;
+  padding: 10px;
+  outline-color: $color-primary;
+  color: $color-white;
+  text-transform: uppercase;
+  font-weight: $font-bold;
+  font-size: $font-size-sm;
+  font-family: $font-sans-alt;
+}
+
+/* This is quite hacky */
+.episode-link {
+  display: inline-block;
+  margin-right: 10px;
+  font-size: $font-size-lg;
+}
+
+/* Large devices */
+@media (max-width: 1200px) {
+}
+
+/* Large devices */
+@media (max-width: 1024px) {
+}
+
+/* Medium devices */
+@media (max-width: 768px) {
+}
+
+/* Custom query */
+@media (max-width: 640px) {
+  .btn-grid,
+  .btn-details {
+    display: none;
+  }
+}
+
+/* Small devices */
+@media (max-width: 480px) {
+  .btn-top {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+}
+
+/* Small devices */
+@media (max-width: 320px) {
+}
+
+/* Extra small devices */
+@media (max-width: 312px) {
+}
+
+/* Extra small devices */
+@media (max-width: 272px) {
+}
+
+
+.btn--add {
+  padding: 0;
+  background: transparent;
+  color: $color-black;
+  font-size: $font-size-xs;
+}

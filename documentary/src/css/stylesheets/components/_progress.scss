@@ -1,0 +1,31 @@
+/*----------------------------------
+PROGRESS BAR
+----------------------------------*/
+
+.progress--header {
+  // position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 10px;
+  background-color: $color-black;
+  color: $color-primary;
+}
+
+.progress--header::-webkit-progress-bar {
+  background-color: $color-black;
+  color: $color-primary;
+}
+
+.progress--header::-webkit-progress-value {
+  background-color: $color-primary;
+  color: $color-primary;
+}
+
+.progress--header::-moz-progress-bar {
+  position: relative;
+  left: -2px;
+  height: 19px;
+  background-color: $color-primary;
+  color: $color-primary;
+}

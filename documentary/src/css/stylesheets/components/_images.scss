@@ -1,0 +1,36 @@
+/*----------------------------------
+IMAGES
+----------------------------------*/
+
+// Brandon Sun branding
+// Medium size, slightly bigger than previous projects
+.logo--black {
+  width: 132px;
+  height: 32px;
+}
+
+.image--episode {
+  max-width: 500px;
+  max-height: 300px;
+  width: 100%;
+  cursor: pointer;
+}
+
+// Better name
+figure {
+  margin: 0;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+// Better name
+.image-article {
+  width: 100%;
+}
+
+// Better name
+.cutline__credit {
+  padding-left: 2px;
+  color: $color-grey-dark;
+  font-weight: $font-bold;
+}

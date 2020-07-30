@@ -1,0 +1,86 @@
+/*----------------------------------
+ICONS
+----------------------------------*/
+
+.icon-play {
+  position: relative;
+  top: 3px;
+  right: -4px;
+  color: $color-white;
+  font-size: 4rem;
+}
+
+// What is this?
+.icon-clock,
+.icon-bookmark,
+.icon-circle {
+  margin-right: 8px;
+  font-size: $font-size-base;
+  color: $color-black;
+}
+
+.icon-clock-o {
+  margin-right: 5px;
+}
+
+
+.icon-bookmark {
+  &:hover {
+    color: $color-primary;
+    transition: 0.25s;
+  }
+}
+
+.icon-twitter {
+  color: $color-twitter;
+  font-size: 2.4rem;
+  cursor: pointer;
+  position: relative;
+  top: 7px;
+  right: -7px;
+}
+
+.icon-camera {
+  margin-right: 5px;
+  color: $color-grey-dark;
+  font-size: $font-size-xs;
+}
+
+.icon-caret-up {
+  margin-left: 10px;
+}
+
+.icon-grid {
+  margin-right: 10px;
+}
+
+.icon-share {
+  color: $color-white;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+
+/* Large devices */
+@media (max-width: 1200px) {
+}
+
+/* Large devices */
+@media (max-width: 1024px) {
+}
+
+/* Medium devices */
+@media (max-width: 768px) {
+}
+
+/* Small devices */
+@media (max-width: 480px) {
+  .icon-caret-up {
+    font-size: 2.4rem;
+  }
+}
+
+/* Small devices */
+@media (max-width: 320px) {
+}
+

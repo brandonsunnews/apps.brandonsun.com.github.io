@@ -1,0 +1,100 @@
+/*----------------------------------
+CREDITS
+----------------------------------*/
+
+.credits {
+  position: fixed;
+  top: 0;
+  z-index: 99;
+  display: none;
+  margin: 0 auto;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  width: 100%;
+  background: transparent;
+  color: $color-primary;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: $font-sans-alt;
+}
+
+.credits__project {
+  margin-top: 30px;
+  margin-bottom: 0;
+  font-weight: $font-bold;
+  font-size: 13rem;
+  font-family: $font-accent;
+}
+
+.credits__person {
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+
+.credits__title {
+  margin-bottom: 0;
+  font-weight: $font-normal;
+  font-weight: $font-light;
+  font-size: $font-size-xs;
+}
+
+.credits__name {
+  margin-top: 12px;
+  font-weight: $font-bold;
+  font-size: $font-size-xl;
+}
+
+.credits--tight-bottom {
+  margin-bottom: 0;
+}
+
+.credits--tight-top {
+  margin-bottom: 0;
+}
+
+.scrolling {
+  -webkit-animation: 60s credits linear;
+     -moz-animation: 60s credits linear;
+      -ms-animation: 60s credits linear;
+          animation: 60s credits linear;
+}
+
+@keyframes credits {
+  0% {
+    top: 100%;
+  }
+  100% {
+    top: -500%;
+  }
+}
+
+@-webkit-keyframes credits {
+  0% {
+    top: 100%;
+  }
+  100% {
+    top: -500%;
+  }
+}
+
+@-moz-keyframes credits {
+  0% {
+    top: 100%;
+  }
+  100% {
+    top: -500%;
+  }
+}
+
+@-ms-keyframes credits {
+  0% {
+    top: 100%;
+  }
+  100% {
+    top: -500%;
+  }
+}
+
+.cross {
+  display: none;
+}

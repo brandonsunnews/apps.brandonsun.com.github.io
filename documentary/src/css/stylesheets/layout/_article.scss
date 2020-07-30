@@ -1,0 +1,138 @@
+/*----------------------------------
+ARTICLE
+----------------------------------*/
+
+// A little weird
+.section--article {
+  padding-top: 75px;
+  padding-bottom: 60px;
+  background: $color-white;
+}
+
+article {
+  margin: 0 auto;
+  width: $article-width;
+
+  .article__byline {
+    margin-bottom: 0;
+    text-transform: uppercase;
+    font-weight: $font-bold;
+    font-size: $font-size-xs;
+    color: $color-black;
+  }
+}
+
+.article__body {
+
+  .cutline {
+    display: inline;
+    width: 100%;
+    color: $color-grey-dark;
+    font-size: $font-size-xs;
+    font-family: $font-sans;
+  }
+
+  p {
+    font-size: $font-size-base;
+    font-family: $font-serif;
+    line-height: $base-line-height;
+    color: $color-black;
+  }
+
+  img {
+    width: 100%;
+  }
+
+  .article__header {
+    margin-top: 75px;
+    text-transform: uppercase;
+    font-weight: $font-bold;
+    font-size: $font-size-lg;
+    font-family: $font-accent;
+  }
+}
+
+.article__opener {
+
+  p {
+    &::first-letter {
+      float: left;
+      padding-right: 8px;
+      text-transform: uppercase;
+      font-size: 16rem;
+      font-family: $font-accent;
+      line-height: $xs-line-height;
+    }
+  }
+}
+
+.preamble {
+  margin-top: 20px;
+  margin-bottom: 40px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid $color-black;
+  font-weight: $font-light;
+  font-size: $font-size-xl;
+  font-family: $font-sans-alt;
+  line-height: $base-line-height;
+}
+
+.article--head {
+  margin-bottom: 35px;
+  text-transform: uppercase;
+  font-weight: $font-bold;
+  font-size: 3.6rem;
+  font-family: $font-accent;
+  line-height: 1.1; // $sm-line-height
+  color: $color-black;
+}
+
+.article--subtitle {
+  margin-bottom: 20px;
+  color: $color-primary;
+  text-transform: uppercase;
+  font-weight: $font-bold;
+  font-size: $font-size-xs;
+}
+
+.articleLength {
+  color: $color-black;
+}
+
+// Needs to be renamed
+.clock,
+.bookmark
+.btn-add {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+/* Large devices */
+@media (max-width: 1200px) {
+}
+
+/* Large devices */
+@media (max-width: 1024px) {
+}
+
+/* Medium devices */
+@media (max-width: 768px) {
+  article {
+    width: 65%;
+  }
+}
+
+/* Small devices */
+@media (max-width: 480px) {
+  article {
+    width: 86%;
+  }
+
+  .preamble {
+    font-size: $font-size-base;
+  }
+}
+
+/* Small devices */
+@media (max-width: 320px) {
+}

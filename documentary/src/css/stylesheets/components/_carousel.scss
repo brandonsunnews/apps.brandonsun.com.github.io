@@ -1,0 +1,42 @@
+/*----------------------------------
+CAROUSEL
+----------------------------------*/
+
+.carousel {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  display: none;
+  width: 100%;
+  background: $color-black;
+  color: $color-white;
+  font-family: $font-sans;
+
+  p {
+    margin: 0;
+  }
+}
+
+.carousel__image {
+  margin: 10px;
+  margin-bottom: 15px;
+  border: 2px solid $color-white;
+  border-radius: 50%;
+}
+
+.carousel__info {
+  position: relative;
+  top: -35px;
+  display: inline-block;
+  margin-left: 7px;
+}
+
+.carousel__title {
+  font-size: $font-size-xs;
+}
+
+.carousel__name {
+  padding-top: 2px;
+  font-weight: $font-bold;
+  font-size: $font-size-sm;
+}

@@ -1,0 +1,37 @@
+/*------------------------------------------------------------------
+MASTER
+
+Project:	    Brandon Sun | Knights of D-Day
+Version:	    1.0
+Last change:	06/05/2016
+- Progress bar cut due to time
+- Need to migrate Flexbox-related classes to `stylesheets/base/_grid`
+
+Assigned to:	Andrew Nguyen (AN)
+Live link:      http://bdnsun.ca/veteransdoc
+-------------------------------------------------------------------*/
+
+// Vendors
+@import "stylesheets/vendor/_normalize";
+
+// Base
+@import "stylesheets/base/_colors";
+@import "stylesheets/base/_typography";
+@import "stylesheets/base/_base";
+@import "stylesheets/base/_helpers";
+
+// Layout-related sections
+@import "stylesheets/layout/_article";
+@import "stylesheets/layout/_episodes";
+@import "stylesheets/layout/_footer";
+@import "stylesheets/layout/_header";
+
+// Components
+@import "stylesheets/components/_blockquote";
+@import "stylesheets/components/_button";
+@import "stylesheets/components/_carousel";
+@import "stylesheets/components/_credits";
+@import "stylesheets/components/_icons";
+@import "stylesheets/components/_images";
+@import "stylesheets/components/_share";
+@import "stylesheets/components/_video";

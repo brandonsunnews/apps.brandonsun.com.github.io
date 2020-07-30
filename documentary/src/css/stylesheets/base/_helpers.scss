@@ -1,0 +1,61 @@
+/*----------------------------------
+BOX SIZING
+----------------------------------*/
+
+* {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/*----------------------------------
+CLEARFIX
+----------------------------------*/
+
+.clearfix:after {
+  display: block;
+  visibility: hidden;
+  clear: both;
+  height: 0;
+  content: " ";
+  font-size: 0;
+}
+* html .clearfix {
+  zoom: 1;
+} /* IE6 */
+*:first-child + html .clearfix {
+  zoom: 1;
+} /* IE7 */
+
+/*----------------------------------
+STATES
+----------------------------------*/
+
+// This class gets applied to `video` on mobile sizes and replaced with a static photo improve site performance
+
+.is-hidden {
+  display: none;
+}
+
+// Background for the credits and share panels
+
+.black {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 90;
+  display: none;
+  width: 100%;
+  height: 100vh;
+  background: $color-black;
+}
+
+/*----------------------------------
+MAGIC NUMBER
+----------------------------------*/
+
+$article-width: 40%;
+$border-radius: 3px;
+$border-circle: 50%;
+// $transition: 0.25s;
+

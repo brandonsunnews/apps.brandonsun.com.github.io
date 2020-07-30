@@ -1,0 +1,104 @@
+/*----------------------------------
+EPISODES
+----------------------------------*/
+
+.section--episode {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background: $color-black;
+}
+
+.episodes {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: flex;
+
+  -webkit-flex-direction: row;
+     -moz-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
+
+  margin: auto; /* On the parent, not child */
+  width: 80%;
+  -webkit-flex-wrap: wrap;
+     -moz-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+}
+
+.episode {
+  padding: 15px;
+  width: 50%;
+}
+
+// Naming convention
+.episode-image {
+  position: relative;
+  max-width: 500px;
+  max-height: 300px;
+  width: 100%;
+  cursor: pointer;
+}
+
+.episode__image { position: relative; }
+.image--episode { position: relative; }
+
+.episode__subtitle {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  color: $color-primary;
+  text-transform: uppercase;
+  font-weight: $font-bold;
+  font-size: $font-size-xs;
+}
+
+.episode__name {
+  font-weight: $font-normal;
+  font-size: $font-size-xl;
+}
+
+.episode__duration {
+  margin-top: 15px;
+  font-size: $font-size-xs;
+}
+
+.episode__name,
+.episode__duration {
+  color: $color-white;
+}
+
+/* Large devices */
+@media (max-width: 1200px) {
+}
+
+/* Large devices */
+@media (max-width: 1024px) {
+}
+
+/* Medium devices */
+@media (max-width: 768px) {
+}
+
+/* Custom query */
+@media (max-width: 640px) {
+  .episodes {
+    -webkit-flex-direction: column;
+       -moz-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 86%;
+  }
+
+  .episode {
+    width: 100%;
+  }
+}
+
+/* Small devices */
+@media (max-width: 480px) {
+}
+
+/* Small devices */
+@media (max-width: 320px) {
+}

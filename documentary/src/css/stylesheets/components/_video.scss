@@ -1,0 +1,25 @@
+/*----------------------------------
+VIDEO
+----------------------------------*/
+
+/* Snippet from that allows for native HTML5 video that allows for the same controls as though you were setting a background-image: url */
+
+video {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  z-index: -100;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+
+  // Static image fallback
+  background: url(../../src/img/teaser-unstyled.jpg) no-repeat;
+  background-position: center center;
+  background-size: cover;
+  -webkit-transform: translate(-50%, -50%);
+     -moz-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
