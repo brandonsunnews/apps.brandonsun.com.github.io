@@ -1,0 +1,239 @@
+/*// Runaway Girls
+// Copyright 2015, Andrew Nguyen
+// http://bdnsun.ca/runaways
+// Complete date: 09072015
+*/
+
+/*----------------------------------
+NORMALIZE
+----------------------------------*/
+
+article,aside,details,figcaption,figure,footer,header,hgroup,nav,section,summary{display:block;}audio,canvas,video{display:inline-block;}audio:not([controls]){display:none;height:0;}[hidden]{display:none;}html{font-family:sans-serif;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;}a:focus{outline:thin dotted;}a:active,a:hover{outline:0;}h1{font-size:2em;}abbr[title]{border-bottom:1px dotted;}b,strong{font-weight:700;}dfn{font-style:italic;}mark{background:#ff0;color:#000;}code,kbd,pre,samp{font-size:1em;font-family:monospace, serif;}pre{white-space:pre-wrap;word-wrap:break-word;}q{quotes:\201C \201D \2018 \2019;}small{font-size:80%;}sub,sup{position:relative;vertical-align:baseline;font-size:75%;line-height:0;}sup{top:-.5em;}sub{bottom:-.25em;}img{border:0;}svg:not(:root){overflow:hidden;}fieldset{margin:0 2px;padding:.35em .625em .75em;border:1px solid silver;}button,input,select,textarea{margin:0;font-size:100%;font-family:inherit;}button,input{line-height:normal;}button,html input[type=button],/* 1 */
+input[type=reset],input[type=submit]{cursor:pointer;-webkit-appearance:button;}button[disabled],input[disabled]{cursor:default;}input[type=checkbox],input[type=radio]{box-sizing:border-box;padding:0;}input[type=search]{-webkit-box-sizing:content-box;-moz-box-sizing:content-box;box-sizing:content-box;-webkit-appearance:textfield;}input[type=search]::-webkit-search-cancel-button,input[type=search]::-webkit-search-decoration{-webkit-appearance:none;}textarea{overflow:auto;vertical-align:top;}table{border-spacing:0;border-collapse:collapse;}body,figure{margin:0;}legend,button::-moz-focus-inner,input::-moz-focus-inner{padding:0;border:0;}
+
+/*----------------------------------
+BOX SIZING
+----------------------------------*/
+
+* {
+-webkit-box-sizing: border-box;
+-moz-box-sizing: border-box;
+box-sizing: border-box;
+}
+
+/*----------------------------------
+CLEARFIX
+----------------------------------*/
+
+.clearfix:after {
+	display: block;
+	visibility: hidden;
+	clear: both;
+	height: 0;
+	content: " ";
+	font-size: 0;
+}
+
+* html .clearfix             { zoom: 1; } /* IE6 */
+*:first-child+html .clearfix { zoom: 1; } /* IE7 */
+
+/*----------------------------------
+SASS PARTIALS
+----------------------------------*/
+
+@import "partials/_variables";
+@import "partials/_main";
+
+// Sections
+@import "partials/_navigation";
+@import "partials/_header";
+@import "partials/_article";
+@import "partials/_blockquote";
+@import "partials/_highlight";
+@import "partials/_issues";
+@import "partials/_images";
+@import "partials/_footer";
+
+
+/* Portrait tablet and small desktops */
+@media (max-width: 940px) {
+	h1 {
+		left: -4px;
+	}
+
+	h2 {
+		padding-top: 8%;
+	}
+
+	.header__dek--opener {
+		width: 80%;
+	}
+
+	.issue__pattern--duff {
+	    background-position: 49% 37%;
+	}
+
+	figcaption {
+	    width: 88%;
+	}
+
+	.bold {
+	    padding-right: 5px;
+	    padding-top: 20px;
+	    display: block;
+	    padding-left: 0px;
+	}
+
+	.underline {
+		border-bottom: 1px solid #ccc;
+		padding-bottom: 25px;
+		margin-bottom: 15px;
+	}
+}
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 768px) {
+	h1 {
+		padding-top: 20%;
+	}
+
+	h2 {
+		padding-top: 12%;
+	}
+
+	.article__text p {
+		width: 85%;
+	}
+
+	.blockquote__border--fullcolor {
+		padding: 35px;
+		padding-top: 60px;
+	}
+
+	.issue__pattern--duff {
+	    background-position: 95% 37%;
+	}
+
+	figcaption {
+	    width: 88%;
+	}
+
+	.bold {
+	    padding-right: 5px;
+	    padding-top: 20px;
+	    display: block;
+	    padding-left: 0px;
+	}
+}
+
+/* Landscape phones and down */
+@media (max-width: 480px) {
+	h1 {
+		padding-top: 35%;
+		font-size: 5rem;
+	}
+
+	h2 {
+		padding-top: 15%;
+	}
+
+	h3 {
+		padding-top: 4%;
+		padding-bottom: 2.5%;
+	}
+
+	.header__dek--opener {
+		width: 80%;
+	}
+
+	.article__text p {
+		width: 85%;
+	}
+
+	.blockquote--fullcolor {
+		font-size: 25px;
+	}
+
+	.issue__pattern--duff {
+	    background-position: 56% 37%;
+	}
+
+	figcaption {
+	    width: 88%;
+	}
+
+	.bold {
+	    padding-right: 5px;
+	    padding-top: 20px;
+	    display: block;
+	    padding-left: 0px;
+	}
+}
+
+/* Custom Size */
+@media (max-width: 350px) {
+	h1 {
+		font-size: 4.5rem;
+		left: -4px;
+	}
+}
+
+/* Landscape phones and down */
+@media (max-width: 320px) {
+	h1 {
+		font-size: 4rem;
+		padding-top: 45%;
+	}
+
+	h2 {
+		padding-top: 15%;
+	}
+
+	h3 {
+		padding-top: 6%;
+		padding-bottom: 3.5%;
+	}
+
+	.header__dek--opener {
+		width: 80%;
+	}
+
+	.header__image {
+		height: 550px;
+	}
+
+	.article__text p {
+		width: 85%;
+	}
+
+	.blockquote--fullcolor {
+		padding: 18px;
+		padding-top: 50px;
+		font-size: 20px;
+	}
+
+	.blockquote__border--fullcolor {
+		padding: 20px;
+		padding-top: 40px;
+		padding-bottom: 40px;
+	}
+
+	p.blockquote__name--fullcolor {
+	    padding-top: 30px;
+	}
+
+	.issue__pattern--duff {
+	    background-position: 52% 37%;
+	}
+
+	figcaption {
+	    width: 88%;
+	}
+
+	.bold {
+	    padding-right: 5px;
+	    padding-top: 20px;
+	    display: block;
+	    padding-left: 0px;
+	}
+}

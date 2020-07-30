@@ -1,0 +1,69 @@
+/*----------------------------------
+BLOCKQUOTE
+----------------------------------*/
+.blockquote--fullcolor {
+	margin-top: 25;
+	margin-right: 0;
+	margin-bottom: 25;
+	margin-left: 0;
+	padding: 40px;
+	padding-top: 50px;
+	background: #ffdc00;
+	text-align: center;
+	font-weight: 700;
+	font-size: 40px;
+	font-family: 'Playfair Display', serif;
+}
+
+.blockquote__border--fullcolor {
+	padding: 45px;
+	border: 10px solid #d2b600;
+}
+
+.blockquote__source--fullcolor {
+	color: #111;
+	text-align: center;
+	font-weight: 700;
+	font-style: normal;
+	font-size: 17px;
+	font-family: 'Lato', sans-serif;
+}
+
+.blockquote__twitter--fullcolor {
+	position: relative;
+	padding-top: 20px;
+	color: #111;
+	font-size: 26px;
+
+	&:hover {
+		color: #d2b600;
+	}
+}
+
+// These are such a hack
+p.blockquote__name--fullcolor {
+	margin-bottom: 0px;
+	padding-top: 20px;
+	padding-bottom: 5px;
+	text-transform: uppercase;
+	font-weight: 700;
+	font-style: normal;
+	font-size: 18px;
+}
+
+p.blockquote__title--fullcolor {
+	margin-bottom: 0px;
+	padding: 0;
+	font-weight: 300;
+	font-style: normal;
+	font-size: 14px;
+}
+
+.circle {
+	display: block;
+	margin: 0 auto;
+	margin-top: 40px;
+	width: 75px;
+	height: 75px;
+	border-radius: 50%;
+}

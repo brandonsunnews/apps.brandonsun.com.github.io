@@ -1,0 +1,78 @@
+/*----------------------------------
+NAVIGATION
+----------------------------------*/
+nav {
+	position: fixed;
+	z-index: 99;
+	width: 100%;
+	height: 72.5px;
+	border-bottom: 1px solid #e7e7e7;
+	background: #fff;
+}
+
+.nav__progress {
+	position: relative;
+	top: -6px;
+	z-index: 9999;
+	width: 100%;
+	height: 19px;
+	background-color: #ccc;
+	color: #ffdc00;
+}
+
+// Other configurations make this green
+.nav__progress::-webkit-progress-bar {
+	background-color: #ccc;
+	color: #ffdc00;
+}
+
+.nav__progress::-webkit-progress-value {
+	background-color: #ffdc00;
+	color: #ffdc00;
+}
+
+.nav__progress::-moz-progress-bar {
+	background-color: #ffdc00;
+	color: #ffdc00;
+	position: relative;
+	left: -2px;
+	height: 15.5px;
+}
+
+/*----------------------------------
+BRANDING
+----------------------------------*/
+.nav__container { margin: 0; }
+
+.nav__logo {
+	position: relative;
+	top: -6px;
+	margin: 14px;
+	width: 105px;
+	height: 25px;
+	cursor: pointer;
+}
+
+/*----------------------------------
+SOCIAL
+----------------------------------*/
+.nav__social {
+	position: relative;
+	top: -48px;
+	float: right;
+	padding-right: 15px;
+}
+
+.fa-facebook,
+.fa-twitter,
+.fa-envelope,
+.fa-whatsapp {
+	padding: 8px;
+	color: #999;
+	cursor: pointer;
+
+	&:hover {
+		outline: none;
+		color: #ffdc00;
+	}
+}

@@ -1,0 +1,46 @@
+/*----------------------------------
+HEADER
+----------------------------------*/
+
+.header__dek--opener {
+	margin: 0 auto;
+	padding-top: 25px;
+	padding-bottom: 25px;
+	width: 560px;
+	color: #111;
+	text-align: center;
+	font-weight: 400;
+	font-size: 1.8rem;
+	font-family: 'Lato', sans-serif;
+}
+
+.header__byline {
+	margin-top: 15px;
+	margin-bottom: 50px;
+	color: #ccc;
+	text-align: center;
+	font-size: 1.4rem;
+	text-transform: uppercase;
+	font-weight: 700;
+	font-family: 'Lato', sans-serif;
+}
+
+.header__image {
+	width: 100%;
+	height: 840px;
+	background-image: url(../img/feature-top.jpg);
+	background-position: right;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.header__graf--opener {
+	font-size: 1.4rem;
+
+	p {
+	margin: 0 auto;
+	padding-bottom: 10px;
+	width: 560px;
+	font-size: 1.4rem;
+	}
+}

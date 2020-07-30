@@ -1,0 +1,30 @@
+/*----------------------------------
+ARTICLE
+----------------------------------*/
+article {
+	background: #fff;
+	font-weight: 400;
+	font-size: 1.4rem;
+	font-family: 'Georgia', serif;
+}
+
+.article__text {
+	padding-top: 50px;
+	padding-bottom: 25px;
+
+	p {
+		margin: 0 auto;
+		padding-top: 10px;
+		padding-bottom: 10px;
+		width: 45%;
+		font-size: 1.6rem;
+		line-height: 1.7;
+	}
+}
+
+.article__first {
+	text-transform: uppercase;
+	letter-spacing: 2;
+	font-weight: 700;
+	font-family: 'Oswald', sans-serif;
+}
